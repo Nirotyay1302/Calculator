@@ -1,0 +1,85 @@
+@font-face {
+    font-family: "Fira Sans";
+    src: url('Seven Segment.ttf');
+    src: url('Seven Segment.ttf') format('truetype');
+  }
+
+body {
+    color: rgb(253, 255, 254);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+    background-color: rgb(248, 238, 238);
+    font-family: "Fira Sans";
+}
+
+.frame {
+    height: 600px;
+    width: 400px;
+    border-radius: 50px;
+    background-color: rgba(10, 132, 151, 0.668);
+    display: flex;
+    padding: 20px 15px;
+}
+
+.inner-frame {
+    flex: 1;
+    display: flex;
+    background-color: rgb(22, 21, 21);
+    border-radius: 40px;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+}
+
+.decoration {
+    width: 120px;
+    height: 15px;
+    background-color: rgb(30, 30, 30);
+    border-radius: 10px;
+}
+
+.display {
+    height: 100px;
+    width: 360px;
+    background-color: rgb(203, 203, 203);
+    border-radius: 30px;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    font-weight: bolder;
+}
+
+.display .text {
+    margin: 8px;
+    font-size: 50px;
+    letter-spacing: 3px;
+}
+
+.buttons {
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    height: 70px;
+    width: 80px;
+    margin: 5px;
+    border-radius: 20px;
+    font-size: 40px;
+    font-family: "Fira Sans";
+}
+
+
+.utility {
+    background-color: rgb(255, 111, 111);
+}
+
+.clear, .delete, .equal {
+    background-color: rgb(255, 255, 198);
+}
